@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐶 Busqueda 😺</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body align='center'>
+
+  <div class="navbar">
+    <button id= lola onclick="navigateTo('inicio.html')">Inicio</button>
+    <button id= lola onclick="navigateTo('acerca.html')">Acerca</button>
+    <button id= lola onclick="navigateTo('servicios.html')">Servicios</button>
+    <button id= lola nclick="navigateTo('contacto.html')">Contacto</button>
+  </div>
+  
+
+
+  <div class="fondo">
+    <img id="myImage" src="fotoPerro2.jpg" alt="Mi Foto">
+  </div>
+
+ 
+    
+  <div class="container">
+    <div class="post-box">
+      <h2>Publica tu búsqueda</h2>
+      <textarea id="postContent" class="post-input" placeholder="Escribe tu publicación aquí..."></textarea>
+      <input type="file" id="imageUpload" accept="image/*">
+      <input type="text" id="locationInput" class="post-input" placeholder="Ingresa la ubicación...">
+      <button onclick="publicarPost()" class="post-btn">Publicar</button>
+    </div>
+
+    <div id="postsContainer" class="posts-container">
+      <!-- Los nuevos posts se agregarán aquí dinámicamente -->
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
