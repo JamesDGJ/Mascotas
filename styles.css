@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-box, .search-box {
+  margin-bottom: 20px;
+}
+
+.post-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-btn {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-btn:hover {
+  background: #0056b3;
+}
+
+.posts-container .post {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+  margin: 0 0 10px;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.post .delete-btn, .post .like-btn, .post .comment-btn {
+  margin-right: 10px;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.post .delete-btn:hover, .post .like-btn:hover, .post .comment-btn:hover {
+  text-decoration: underline;
+}
+
+.post .comments {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.comment {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+
+
+#lola:hover {
+  background: #0056b3;
+  
+}
+#lola{
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
