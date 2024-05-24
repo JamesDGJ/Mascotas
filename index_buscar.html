@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐶 Busqueda 😺</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <br>
+  <br>
+  
+  <div class="navbar">
+   
+      <a id="botones" href="inicio.html">Inicio</a>
+      <a id="botones" href="acerca.html">Acerca</a>
+      <a id="botones" href="servicios.html">Servicios</a>
+      <a id="botones" href="contacto.html">Contacto</a>
+  
+  </div>
+
+
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slide"><img src="https://nupec.com/wp-content/uploads/2020/07/Captura-de-pantalla-2020-07-24-a-las-17.33.44.png" alt="Slide 1"></div>
+        <div class="slide"><img src="https://as01.epimg.net/diarioas/imagenes/2022/05/29/actualidad/1653826510_995351_1653826595_noticia_normal_recorte1.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="https://img.huffingtonpost.es/files/image_720_480/uploads/2023/06/22/un-perro-de-raza-labrador.jpeg" alt="Slide 3"></div>
+        <div class="slide"><img src="https://s1.elespanol.com/2023/03/10/curiosidades/mascotas/747436034_231551832_1706x1280.jpg" alt="Slide 3"></div>
+    </div>
+  </div>
+
+  <br>
+    
+  <div class="container">
+    <div class="post-box">
+      <h2>Publica tu búsqueda</h2>
+      <textarea id="postContent" class="post-input" placeholder="Escribe tu publicación aquí..."></textarea>
+      <input type="file" id="imageUpload" accept="image/*">
+      <input type="text" id="locationInput" class="post-input" placeholder="Ingresa la ubicación...">
+      <button onclick="publicarPost()" class="post-btn">Publicar</button>
+    </div>
+
+    <div id="postsContainer" class="posts-container">
+      <!-- Los nuevos posts se agregarán aquí dinámicamente -->
+  </div>
+
+    
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,95 +1,177 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+/*---------------------------- inicio--------------------------------------------*/
+
+body, html {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.gato_perro {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.post-box, .search-box {
-  margin-bottom: 20px;
+.gato_perro a {
+    text-decoration: none;
 }
 
-.post-input {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.gato_perro img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
-.post-btn {
-  padding: 10px 20px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.gato_perro img:hover {
+    transform: scale(1.08);
+    border-color: #26ee1f;
 }
 
-.post-btn:hover {
-  background: #0056b3;
-}
+/* -----------------------------------fin inicio-----------------------*/
 
-.posts-container .post {
-  background: #fff;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.post p {
-  margin: 0 0 10px;
-}
-
-.post img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.post .delete-btn, .post .like-btn, .post .comment-btn {
-  margin-right: 10px;
-  color: #007BFF;
-  cursor: pointer;
-}
-
-.post .delete-btn:hover, .post .like-btn:hover, .post .comment-btn:hover {
-  text-decoration: underline;
-}
-
-.post .comments {
-  margin-top: 10px;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-}
-
-.comment {
-  margin: 5px 0;
-  padding: 5px 10px;
-  background: #f9f9f9;
-  border-radius: 5px;
-}
-
-
-
-#lola:hover {
-  background: #0056b3;
+ /*------------------------ formulario--------------------------------*/
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
+  .post-box, .search-box {
+    margin-bottom: 20px;
+  }
+  
+  .post-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post-btn {
+    padding: 10px 20px;
+    background: #25a54c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-btn:hover {
+    background: #34ee6c;
+  }
+  
+  .posts-container .post {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post p {
+    margin: 0 0 10px;
+  }
+  
+  .post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .post .delete-btn, .post .like-btn, .post .comment-btn {
+    margin-right: 10px;
+    color: #007BFF;
+    cursor: pointer;
+  }
+  
+  .post .delete-btn:hover, .post .like-btn:hover, .post .comment-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .post .comments {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .comment {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+  /*----------------------- fin formulario-----------------------------*/
+  
+  
+ 
+  /* ------------------------lineas de prueba de slyder---------------------------------------*/
+
+
+.slider-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
 }
-#lola{
-  padding: 10px 20px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+.slider {
+  display: flex;
+  width: 100%; /* 3 slides * 100% each */
+  animation: slide 5s  alternate-reverse infinite;
 }
+
+.slide {
+  flex: 1 0 100%;
+  width: 100%;
+  height: 400px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33.33% { transform: translateX(0%); }
+  33.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+
+  /* ------------------------FIN lineas de prueba de slyder---------------------------------------*/
+  
+
+  /* barra de navegacion*/
+  
+  #botones:hover {
+    background: #34ee6c;
+  
+  }
+
+  .navbar{
+    text-align: center;
+  }
+  
+  #botones{
+    
+    padding: 12px 70px;
+    background: #25a54c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center 
+    
+  }
+  
