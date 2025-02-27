@@ -20,6 +20,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .navbar-logo {
@@ -142,3 +143,4 @@ body {
 .comment-form button:hover {
     background-color: #45a049;
 }
+
