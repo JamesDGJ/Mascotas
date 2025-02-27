@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas Perdidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+        <h1>Mascotas Perdidas</h1>
+    </header>
+
+    <main>
+        <section id="post-form">
+            <h2>Crear Nueva Publicación</h2>
+            <form id="create-post">
+                <input type="text" id="post-title" placeholder="Título de la publicación" required>
+                <textarea id="post-description" placeholder="Descripción de la mascota perdida" required></textarea>
+                <input type="file" id="post-images" accept="image/*" multiple max="3">
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <section id="posts">
+            <h2>Publicaciones</h2>
+            <div id="posts-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
