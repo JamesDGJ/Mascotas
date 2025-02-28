@@ -4,20 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas Perdidas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <ul class="navbar-menu">
                 <li><a href="#">Se Busca</a></li>
-                <li><a href="#">Adopcion</a></li>
+                <li><a href="#">Adopción</a></li>
                 <li><a href="#">Finales Felices</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- Carrusel de Bootstrap -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/_107435678_perro1.jpg.webp" class="d-block w-100 carousel-img" alt="Mascota perdida 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/best-hypoallergenic-dogs.webp" class="d-block w-100 carousel-img" alt="Mascota perdida 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/razas-de-perros-mas-comunes.webp" class="d-block w-100 carousel-img" alt="Mascota perdida 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
 
     <!-- Contenedor Principal -->
     <div class="main-container">
@@ -26,7 +52,7 @@
             <h2>Crear Nueva Publicación</h2>
             <form id="create-post">
                 <input type="text" id="post-title" placeholder="Título de la publicación" required>
-                <input type="text" id="post-title" placeholder="lugar visto por ultima vez" required>
+                <input type="text" id="post-location" placeholder="Lugar visto por última vez" required>
                 <textarea id="post-description" placeholder="Descripción de la mascota perdida" required></textarea>
                 <input type="file" id="post-images" accept="image/*" multiple max="3">
                 <button type="submit">Publicar</button>
@@ -40,6 +66,9 @@
         </section>
     </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>

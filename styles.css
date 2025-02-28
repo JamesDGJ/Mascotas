@@ -144,3 +144,18 @@ body {
     background-color: #45a049;
 }
 
+
+
+
+    #carouselExample {
+        max-width: 800px;  /* Ajusta el ancho del carrusel */
+        margin: auto;      /* Centra el carrusel */
+    }
+    .carousel-inner {
+        height: 500px; /* Fija la altura del carrusel */
+    }
+    .carousel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Recorta la imagen sin deformarla */
+    }
