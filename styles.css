@@ -54,7 +54,7 @@ body {
 
 /* Contenedor Principal */
 .main-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -145,11 +145,12 @@ body {
 }
 
 
-
+/* Carrusel */
 
     #carouselExample {
-        max-width: 800px;  /* Ajusta el ancho del carrusel */
-        margin: auto;      /* Centra el carrusel */
+        max-width: 1000px;  
+        margin: auto;   
+        padding: 50px;
     }
     .carousel-inner {
         height: 500px; /* Fija la altura del carrusel */
